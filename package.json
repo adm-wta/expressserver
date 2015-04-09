@@ -1,14 +1,14 @@
 {
-  "name": "SimpleExpressServerForHeroku",
+  "name": "projectone",
   "version": "0.1.0",
-  "description": "A simple server based on Node.js and Express for deployment on Heroku",
+  "description": "My first project on Heroku",
   "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidand36/SimpleExpressServerForHeroku.git"
+    "url": "https://github.com/adm-wta/expressserver.git"
   },
   "keywords": [
     "express",
@@ -18,12 +18,12 @@
   "author": "David M. Anderson",
   "license": "GPL 3.0",
   "bugs": {
-    "url": "https://github.com/davidand36/SimpleExpressServerForHeroku/issues"
+    "url": "https://github.com/adm-wta/expressserver.git/issues"
   },
   "engines": {
-      "node": "0.10.x"
+      "node": "0.10.x":wq
   },
-  "homepage": "https://github.com/davidand36/SimpleExpressServerForHeroku",
+  "homepage": "https://github.com/adm-wta/expressserver.git",
   "dependencies": {
     "compression": "^1.0.9",
     "express": "^4.7.2",
