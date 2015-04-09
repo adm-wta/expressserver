@@ -21,7 +21,7 @@
     "url": "https://github.com/adm-wta/expressserver.git/issues"
   },
   "engines": {
-      "node": "0.10.x":wq
+      "node": "0.10.x"
   },
   "homepage": "https://github.com/adm-wta/expressserver.git",
   "dependencies": {
