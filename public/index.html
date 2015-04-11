@@ -2,13 +2,65 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Tommy Alexander</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tommy Alexander</title><script src="./vendor/jquery/jquery.js"></script>
+      <script src="./js/jquery/jquery.js"></script>
+      <script src="./js/bootstrap/js/bootstrap.js"></script>
+      <link rel="stylesheet" type="text/css" href="./js/bootstrap/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="./css/custom.css" >
+      <script src="./js/angular/angular.js"></script>
+      <script src="./js/angular/angular-route.js"></script>
+      <script src ="./controllers/controller1.js"></script>
   </head>
 
   <body>
-    <h1>Tommy Alexander</h1>
-    <p>
-      No can to be until the weekend, see the light....
-    </p>
+  <div ng-app="app">
+
+        <h1>Built with all the latest hipster technology...</h1>
+
+        <div ng-controller="controller1">
+
+      <h2>AngularJS Form.....</h2>
+
+          <form name="registrationForm" role="form" id="registrationform">
+            <div class="form-group">
+            <input  class = "form-control" type="text" placeholder="First Name" name="firstName" ng-model="person.firstName" required/><br/>
+            </div>
+            <div class="form-group">
+                <input class = "form-control" type="text"  placeholder="Last Name" name="lastName" ng-model="person.lastName" required/><br/>
+            </div>
+            <div class="form-group">
+                <input class = "form-control" type="email" placeholder="Email" name="email" ng-model="person.email" required><br/>
+            </div>
+            <div class="form-group">
+                <select class = "form-control" name="channels" ng-model="person.channels">
+                     <option value="">Where did you hear about us?</option>
+             </select><br/>
+            </div>
+            <div class="checkbox form-group">
+                <label for="newsletterOptIn">
+                <input class = "form-control" ng-model="person.newsletterOptIn" type="checkbox" name="newsletterOptIn"
+                         id="newsletterOptIn" value="newsletterOptIn"/>
+                Recieve monthly newsletter
+                </label>
+          
+                </div>
+            <div class="form-group">
+                <br/>
+            <input class = "btn btn-danger" type="submit" value="Register">
+            </div>
+
+
+
+
+
+
+
+          </form>
+        </div>
+    </div>
+
+
+
   </body>
 </html>
