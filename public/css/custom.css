@@ -1,21 +1,52 @@
- h1 {
-     
-     margin:5%;
-     padding:2%;
-     color:white;
-     background-color:black;
-     
- }
+body {
+    font: normal 16px/1.4 Georgia;
 
- h2 {
+}
 
-     margin-left:5%;
-     margin-right:5%;
-     color:darkred;
-     
+
+ .validationerror {
+
+     color:red;
 
  }
- #registrationform {
+
+#registrationform {
      
      margin: 5%;
  }
+
+.textinput {
+
+    background-color: lightgoldenrodyellow;
+}
+
+.selectinput {
+
+    background-color: lightgoldenrodyellow;
+
+}
+
+
+input:not([type='checkbox']), select {
+      width: 100px;
+}
+select, input {
+      padding: 5px;
+      margin-top: 12px;
+      font-family: inherit;
+}
+input[type='submit'] {
+      width: 264px;
+}
+form span {
+      color: red;
+}
+input[name='email'].ng-dirty.ng-invalid {
+      color: red;
+}
+
+input[name='email'].ng-dirty.ng-valid {
+      color: green;
+}
+
+

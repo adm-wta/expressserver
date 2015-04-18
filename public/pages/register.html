@@ -1,0 +1,85 @@
+ <div class="jumbotron text-center">
+        <h1>Registration Page</h1>
+
+        <p>{{ message }}</p>
+    <form style="width:25%; margin:auto;" name ="registrationForm" role="form" id="registrationform" ng-submit="register()" novalidate>
+
+        <div ng-show="showSuccessMessage">
+                            Thank you for taking the time to register!
+                      </div>
+
+                  <div class="error" ng-show="showErrorMessage">
+                        There appears to have been a problem with your registration.<br/>
+                   </div>
+
+
+
+
+
+        <div class="form-group">
+                  <input  class = "form-control textinput" type="text" placeholder="First Name" name="firstName" ng-model="person.firstName" required/><br/>
+            <span ng-show="firstNameInvalid" class="validationerror">Please enter a value for First name</span>
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <input class = "form-control textinput" type="text"  placeholder="Last Name" name="lastName" ng-model="person.lastName" required/><br/>
+                <span ng-show="lastNameInvalid" class="validationerror">Please enter a value for Last name</span>
+            </div>
+            <div class="form-group">
+                <input class = "form-control textinput" type="email" placeholder="Email" name="email" ng-model="person.email" required><br/>
+                <span ng-show="emailInvalid"><br/>A valid email address is required</span>
+                <br/>
+            </div>
+            <div class="form-group">
+                <input ng-model="subject" type="text" class="form-control textinput" id="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <select class = "form-control selectinput" name="research" ng-model="person.channels" ng-options ="obj.value as obj.label for obj in person.channels">
+                          <option value="">Where did you hear about us?</option>
+                              </select>
+                <span ng-show="researchInvalid"><br/>Please tell us where you heard about us</span>
+                <br/>
+            </div>
+            <div class="checkbox form-group">
+                <label for="newsletterOptIn">
+                    <input class = "form-control" ng-model="person.newsletterOptIn" type="checkbox" name="newsletterOptIn"
+                                      id="newsletterOptIn" value="newsletterOptIn"/>
+                              Recieve monthly newsletter
+                </label>
+                    
+            </div>
+            <div class="form-group">
+                <br/>
+                <input ng-disabled="working" class = "btn btn-danger" type="submit" value="Register">
+                <span ng-show="working" style="padding-left:10px;">
+                <img src="images/loading.GIF"/>
+                </span>
+
+                <br/>
+                <div ng-show="doShow">
+                      Thank you for taking the time to register!”
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+                </form>
+
+
+        <div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
